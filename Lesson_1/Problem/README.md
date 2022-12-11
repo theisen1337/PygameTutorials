@@ -82,6 +82,7 @@ Get Familiar with the keys you already are using and others. Update movement to 
     # Try to update movement yourself before looking at the answer.
 ```
 
+---------------------
 <details><summary>Answer</summary>
 <p>
 
@@ -101,6 +102,7 @@ Get Familiar with the keys you already are using and others. Update movement to 
 
 </p>
 </details>
+---------------------
 
 Now if you run the game you should notice that you can move left,right,up, and down.
 You will also notice that when moving up, and down you glide across the screen, alot like astroids.
@@ -114,6 +116,7 @@ Update the math logic, try yourself first.
     self.pos += self.vel + 0.5 * self.acc   # Add velocity, constant times acceleration to position
 ```
 
+---------------------
 <details><summary>Answer</summary>
 <p>
 
@@ -129,6 +132,7 @@ Update the math logic, try yourself first.
 
 </p>
 </details>
+---------------------
 
 Now if you run the program you will be able to move correctly in all directions. But there is no wrapping on the top and bottem.
 Add the bounds yourself.
@@ -145,6 +149,7 @@ Add the bounds yourself.
 You should be able to add the bounds, yourself then test them. You might notice that the sprite cut off for the player is different for `Left-Right` and `Up-Down` this is because the window toolbar takes up some of the canvas this is caused by the Windows Gui API that gives that overlays the toolbar.
 To fix this issue of cutting the sprite weirdly just move the bounds inward on both directions by half the size of the sprite (`15px`).
 
+---------------------
 <details><summary>Answer</summary>
 <p>
 
@@ -165,12 +170,13 @@ To fix this issue of cutting the sprite weirdly just move the bounds inward on b
 
 </p>
 </details>
+---------------------
 
 # Step 4 - Add a new game object
 
 Now that player movement is flushed out, lets give the player something to do. Lets add a `coin` object. Initialize it the same way as the player, but skip the movement vector parameters.
 
-
+---------------------
 <details><summary>Answer</summary>
 <p>
 
@@ -187,11 +193,12 @@ class Coin(pygame.sprite.Sprite):
 
 </p>
 </details>
+---------------------
 
 If you play the game you will not see any new sprites.
 Create the coin sprite by declaring it, then add it to `all_sprites`. You should be able to run the game and see it.
 
-
+---------------------
 <details><summary>Answer</summary>
 <p>
 
@@ -210,6 +217,7 @@ Create the coin sprite by declaring it, then add it to `all_sprites`. You should
 
 </p>
 </details>
+---------------------
 
 You will notice a gold sqaure about 1/5 smaller then the player sprite. If you run over it, nothing will happen. If you added the coin to the sprite group before the player the coin will disappear under the player sprite, and vis versa if you added the coin after the player in the sprite group.
 
@@ -270,6 +278,7 @@ Now lets programmically add what happens when the player runs into a coin.
 
 Add a new sprite group called `coins`, and add coin to it. A sprite can belong to one or many sprite groups at once.
 
+---------------------
 <details><summary>Answer</summary>
 <p>
 
@@ -290,7 +299,7 @@ coins.add(C1)
 
 </p>
 </details>
-
+---------------------
 
 lets add a function to check for collision on the player object.
 ```python
@@ -393,6 +402,7 @@ start here
 
 Give it a try, check out the answer when your done.
 
+---------------------
 <details><summary>Answer</summary>
 <p>
 
@@ -414,6 +424,6 @@ Now make sure the call is in the "if hit" condition under player object.
 
 </p>
 </details>
+---------------------
 
-
-
+You are now done, check it out. Play around see what you can add.
