@@ -102,6 +102,7 @@ Get Familiar with the keys you already are using and others. Update movement to 
 
 </p>
 </details>
+
 ---------------------
 
 Now if you run the game you should notice that you can move left,right,up, and down.
@@ -132,6 +133,7 @@ Update the math logic, try yourself first.
 
 </p>
 </details>
+
 ---------------------
 
 Now if you run the program you will be able to move correctly in all directions. But there is no wrapping on the top and bottem.
@@ -170,6 +172,7 @@ To fix this issue of cutting the sprite weirdly just move the bounds inward on b
 
 </p>
 </details>
+    
 ---------------------
 
 # Step 4 - Add a new game object
@@ -193,6 +196,7 @@ class Coin(pygame.sprite.Sprite):
 
 </p>
 </details>
+    
 ---------------------
 
 If you play the game you will not see any new sprites.
@@ -217,6 +221,7 @@ Create the coin sprite by declaring it, then add it to `all_sprites`. You should
 
 </p>
 </details>
+    
 ---------------------
 
 You will notice a gold sqaure about 1/5 smaller then the player sprite. If you run over it, nothing will happen. If you added the coin to the sprite group before the player the coin will disappear under the player sprite, and vis versa if you added the coin after the player in the sprite group.
@@ -299,6 +304,7 @@ coins.add(C1)
 
 </p>
 </details>
+    
 ---------------------
 
 lets add a function to check for collision on the player object.
@@ -424,6 +430,7 @@ Now make sure the call is in the "if hit" condition under player object.
 
 </p>
 </details>
+    
 ---------------------
 
 You are now done, check it out. Play around see what you can add.
